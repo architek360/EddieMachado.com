@@ -589,6 +589,20 @@ p {
 .icon-github:before {
   content: "\e603"; }
 
+.dl-btn {
+  display: inline-block;
+  height: 34px;
+  line-height: 34px;
+  padding: 0 12px;
+  color: white;
+  background-color: #5b7582;
+  border: 0;
+  border-radius: 2px;
+  margin: 14px 0 3.3em; }
+  .dl-btn:hover, .dl-btn:focus {
+    color: white;
+    background-color: #485d67; }
+
 .skills {
   margin: 14px 0 4.4em; }
   .skills li {

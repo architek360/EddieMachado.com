@@ -1,0 +1,18 @@
+
+
+.dl-btn {
+  display: inline-block;
+  height: 34px;
+  line-height: 34px;
+  padding: 0 12px;
+  color: $white;
+  background-color: $gray-btn;
+  border: 0;
+  border-radius: 2px;
+  margin: 14px 0 3.3em;
+
+  &:hover, &:focus {
+    color: $white;
+    background-color: darken($gray-btn, 9%);
+  }
+}
