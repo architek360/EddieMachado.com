@@ -1,0 +1,139 @@
+
+
+// loding the page elegantly
+.wf-loading {
+
+  #container {
+    opacity: 0;
+  }
+
+  .skills {
+    .graph {
+      width: 100%;
+    }
+  }
+} // end wf-loading
+
+.wf-active {
+  #container {
+    opacity: 1;
+  }
+}
+
+
+body {
+  background-color: $white;
+  color: $text-color;
+  font-size: 14px;
+  line-height: 1.651em;
+  height:100%;
+  font-family: $open;
+  border-top: 7px solid #14252e;
+}
+
+a {
+  color: $green;
+  text-decoration: none;
+  border-bottom: 1px dotted $green;
+
+  &:hover, &:focus {
+    color: darken($green, 9%);
+  }
+
+}
+
+#container{
+  max-width: 1000px;
+  width: 94%;
+  margin: 0 auto;
+  @include transition(opacity 0.4s ease-in);
+}
+
+
+header{
+  padding: 15px 0;
+  margin-bottom: 21px;
+}
+
+.main {
+  margin-bottom: 4.4em;
+}
+
+.background {
+  margin-top: 2.2em;
+
+  h2 {
+    margin-bottom:4px;
+  }
+
+  p {
+    margin-bottom:25px;
+  }
+} // end background
+
+
+
+.speaking {
+
+  h4 {
+    margin-bottom: 7px;
+  }
+
+  a {
+    margin-top: 7px;
+  }
+}
+
+dt {
+  color: $text-headline;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+dd {
+  margin-bottom: 25px;
+}
+
+.top-block {
+  margin-top:40px;
+}
+
+
+.sites{
+  margin: 50px 0 0;
+}
+
+footer {
+  clear: both;
+  margin: 0 0 1.1em;
+  text-align: center;
+  color: $text-meta;
+}
+
+
+@media only screen and (min-width:700px) {
+
+  .main {
+    width: 60%;
+    float: left;
+  }
+
+  aside {
+    width: 34%;
+    float: right;
+  }
+
+} // end mq
+
+
+
+@media only screen and (min-width:740px) {
+
+  h1 {
+    font-size: 24px;
+  }
+
+} // end mq
+

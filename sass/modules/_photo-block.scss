@@ -1,0 +1,50 @@
+
+
+// image helper
+.max-width {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+}
+
+// the photo block container
+.photo-block {
+  position: relative;
+  margin-top: 2.2em;
+  display: block;
+
+  &:hover, &:focus {
+
+    h4 {
+      opacity: 1;
+    }
+
+  }
+
+  h4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    color: $white;
+    font-weight: 400;
+    text-align: right;
+    padding: 4px 12px 12px;
+    opacity: 0.7;
+    @include transition(all 0.2s ease);
+  }
+
+  a {
+    color: $white;
+    text-decoration: none;
+    border-bottom: 1px dotted $white;
+    @include transition(all 0.2s ease);
+
+    &:hover, &:focus {
+      color: $green;
+    }
+  }
+
+} // end photo block

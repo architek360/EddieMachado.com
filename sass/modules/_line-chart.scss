@@ -1,0 +1,74 @@
+
+
+.skills {
+  margin: 14px 0 4.4em;
+
+  li {
+    position: relative;
+    color: lighten($black, 4%);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 28px;
+    height: 28px;
+    margin-bottom: 7px;
+    padding-left: 7px;
+    overflow: hidden;
+    box-shadow: 0 3px 0 darken($green, 9%);
+    border-radius: 3px;
+    z-index: 9;
+    @include css-gradient($green,darken($green,6%));
+    @include transition(all 0.3s ease-in);
+
+    &:hover, &:focus {
+      @include css-gradient(darken($green, 2%),darken($green,8%));
+      box-shadow: 0 3px 0 darken($green, 11%);
+    }
+  }
+
+} // end skills
+
+// span that cuts off each level
+.graph {
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 28px;
+  padding-left: 10px;
+  text-align: left;
+  display: block;
+  color: $light-gray;
+  color: rgba(255,255,255,0); // transparent for those who support it
+  background-color: $light-gray;
+  border-radius: 0 1px 2px 0;
+  box-shadow: inset 2px 0 2px darken($light-gray, 9%);
+  z-index: 10;
+  @include transition(all 1.3s ease-in);
+}
+
+// 60%
+.six {
+  .graph {
+    width: 25%;
+  }
+}
+
+// 70%
+.seven {
+  .graph {
+    width: 20%;
+  }
+}
+
+// 80%
+.eight {
+  .graph {
+    width: 15%;
+  }
+}
+
+// 90%
+.nine {
+  .graph {
+    width: 10%;
+  }
+}

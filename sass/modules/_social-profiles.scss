@@ -1,0 +1,30 @@
+
+
+.profiles {
+  margin-bottom: 4.4em;
+
+  li {
+    width: 25%;
+    float: left;
+    text-align: center;
+  }
+
+  a {
+    display: block;
+    width: 100%;
+    color: $text-color;
+    border-bottom: 0;
+    font-size: 12px;
+
+    &:before {
+      font-size: 32px;
+      line-height: 48px;
+      display: block;
+    }
+
+    &:hover, &:focus {
+      color: $black;
+      text-decoration: none;
+    }
+  }
+} // end social profiles

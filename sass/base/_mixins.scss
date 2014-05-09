@@ -1,0 +1,37 @@
+
+
+// ANIMATION MIXIN
+// usage: @include animation(10s, 5s, changecolour);
+@mixin animation($delay, $duration, $animation, $iteration) {
+    // defining prefixes so we can use them in mixins below
+    $prefixes:      ("-webkit", "-moz");
+
+    @each $prefix in $prefixes {
+
+      // animation shorthand
+      #{$prefix}-animation: $animation $duration ease-in-out $delay $iteration normal;
+      // fill mode
+      #{$prefix}-animation-fill-mode: both;
+
+    }
+
+    animation: $animation $duration linear $delay $iteration normal;
+    animation-fill-mode: both;
+}
+
+
+// TRANISTION
+// usage: @include transition(all 0.2s ease-in-out);
+@mixin transition($transition...) {
+  -webkit-transition: $transition;
+  transition: $transition;
+}
+
+// CSS3 GRADIENTS
+// usage: @include css-gradient(#dfdfdf,#f8f8f8);
+@mixin css-gradient($from: #dfdfdf, $to: #f8f8f8) {
+  background-color: $to;
+  background-image: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+  background-image: -webkit-linear-gradient(top, $from, $to);
+  background-image: linear-gradient(to bottom, $from, $to);
+}

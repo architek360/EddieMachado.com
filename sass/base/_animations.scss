@@ -1,0 +1,19 @@
+
+
+
+// SLIDING TEXT BACKGROUND ANIMATION
+// usage: @include animation(0, 1s, textSlide, infinite);
+@-webkit-keyframes textSlide {
+  0% { background-position: 100% 0;}
+  100% { background-position: -114% 0;}
+}
+
+@-moz-keyframes textSlide {
+  0% { background-position: 100% 0;}
+  100% { background-position: -114% 0;}
+}
+
+@keyframes textSlide {
+  0% { background-position: 100% 0;}
+  100% { background-position: -114% 0;}
+}
