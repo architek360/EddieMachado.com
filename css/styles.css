@@ -471,19 +471,16 @@ span.amp {
 @-webkit-keyframes textSlide {
   0% {
     background-position: 100% 0; }
-
   100% {
     background-position: -114% 0; } }
 @-moz-keyframes textSlide {
   0% {
     background-position: 100% 0; }
-
   100% {
     background-position: -114% 0; } }
 @keyframes textSlide {
   0% {
     background-position: 100% 0; }
-
   100% {
     background-position: -114% 0; } }
 h1, .h1 {
@@ -594,17 +591,17 @@ p {
   height: 34px;
   line-height: 34px;
   padding: 0 12px;
-  color: white;
+  color: #fff;
   background-color: #5b7582;
   border: 0;
   border-radius: 2px;
   margin: 14px 0 3.3em; }
   .dl-btn:hover, .dl-btn:focus {
-    color: white;
+    color: #fff;
     background-color: #485d67; }
 
 .skills {
-  margin: 14px 0 4.4em; }
+  margin: 14px 0 0; }
   .skills li {
     position: relative;
     color: #1b303c;
@@ -630,6 +627,9 @@ p {
       background-image: -webkit-linear-gradient(top, #47c482, #3ab273);
       background-image: linear-gradient(to bottom, #47c482, #3ab273);
       box-shadow: 0 3px 0 #36a76b; }
+
+.tldr {
+  margin: 2.2em 0 3.3em; }
 
 .graph {
   position: absolute;
@@ -678,7 +678,7 @@ p {
     left: 0;
     margin: 0;
     width: 100%;
-    color: white;
+    color: #fff;
     font-weight: 400;
     text-align: right;
     padding: 4px 12px 12px;
@@ -686,9 +686,9 @@ p {
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease; }
   .photo-block a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    border-bottom: 1px dotted white;
+    border-bottom: 1px dotted #fff;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease; }
     .photo-block a:hover, .photo-block a:focus {
@@ -723,7 +723,7 @@ p {
   opacity: 1; }
 
 body {
-  background-color: white;
+  background-color: #fff;
   color: #5d717b;
   font-size: 14px;
   line-height: 1.651em;
@@ -770,6 +770,8 @@ dt {
   letter-spacing: 1px;
   font-size: 12px;
   font-weight: 700; }
+  dt.bones-blurb {
+    margin-top: 25px; }
 
 dd {
   margin-bottom: 25px; }
@@ -777,12 +779,18 @@ dd {
 .top-block {
   margin-top: 40px; }
 
+.case-study {
+  margin-top: 40px; }
+  .case-study .max-width {
+    margin-top: 25px; }
+
 .sites {
   margin: 50px 0 0; }
 
 footer {
   clear: both;
-  margin: 0 0 1.1em;
+  margin: 0 auto 1.1em;
+  max-width: 580px;
   text-align: center;
   color: #79929d; }
 

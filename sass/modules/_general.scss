@@ -90,6 +90,10 @@ dt {
   letter-spacing: 1px;
   font-size: 12px;
   font-weight: 700;
+
+  &.bones-blurb {
+    margin-top: 25px;
+  }
 }
 
 dd {
@@ -100,14 +104,24 @@ dd {
   margin-top:40px;
 }
 
+.case-study {
+  margin-top: 40px;
+
+  .max-width {
+    margin-top: 25px;
+  }
+
+}
 
 .sites{
   margin: 50px 0 0;
 }
 
+
 footer {
   clear: both;
-  margin: 0 0 1.1em;
+  margin: 0 auto 1.1em;
+  max-width: 580px;
   text-align: center;
   color: $text-meta;
 }

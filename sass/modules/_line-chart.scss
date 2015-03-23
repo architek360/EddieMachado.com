@@ -1,7 +1,7 @@
 
 
 .skills {
-  margin: 14px 0 4.4em;
+  margin: 14px 0 0;
 
   li {
     position: relative;
@@ -26,6 +26,10 @@
   }
 
 } // end skills
+
+.tldr {
+  margin: 2.2em 0 3.3em;
+}
 
 // span that cuts off each level
 .graph {
